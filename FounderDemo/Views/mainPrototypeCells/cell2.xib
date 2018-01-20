@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="345" id="KGk-i7-Jjw" customClass="cell2" customModule="FounderDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="345"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="344.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="altonAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="Jpx-Uz-bLA" customClass="roundedImage" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="16" y="32" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="hLE-29-eDK"/>
+                            <constraint firstAttribute="height" constant="32" id="lgt-v8-nQH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Alton Yeend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeZ-zs-d4Q" customClass="mainLabel" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="56" y="32" width="83" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="HUj-nm-wY7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Designer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3z-mH-pXj" customClass="subtleLabel" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="56" y="50" width="51" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="s81-eT-xXI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Created a new group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWq-kT-pt4" customClass="subtleLabel" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="56" y="84" width="121" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="mZS-C9-sEG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ToL-ME-X4I" customClass="borderView" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="56" y="110" width="372" height="56"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="groupAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="QZL-EI-j2H">
+                                <rect key="frame" x="16" y="16" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="26e-fM-Zx6"/>
+                                    <constraint firstAttribute="height" constant="24" id="PT1-Kp-zWR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="UX Design" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeE-Wj-yTd" customClass="mainLabel" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="56" y="19" width="74.5" height="18"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QZL-EI-j2H" firstAttribute="leading" secondItem="ToL-ME-X4I" secondAttribute="leading" constant="16" id="9sE-Sg-4fR"/>
+                            <constraint firstItem="DeE-Wj-yTd" firstAttribute="centerY" secondItem="ToL-ME-X4I" secondAttribute="centerY" id="KDb-wc-DpA"/>
+                            <constraint firstAttribute="height" constant="56" id="OOc-o4-kRl"/>
+                            <constraint firstItem="QZL-EI-j2H" firstAttribute="centerY" secondItem="ToL-ME-X4I" secondAttribute="centerY" id="fK6-ya-PUe"/>
+                            <constraint firstItem="DeE-Wj-yTd" firstAttribute="leading" secondItem="QZL-EI-j2H" secondAttribute="trailing" constant="16" id="vLz-GJ-tq7"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ac4-2y-Pfb" customClass="seperatorView" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="198" width="480" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="FZD-Ub-f1p"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="t3z-mH-pXj" firstAttribute="leading" secondItem="Jpx-Uz-bLA" secondAttribute="trailing" constant="8" id="52p-jb-GLu"/>
+                    <constraint firstItem="ToL-ME-X4I" firstAttribute="leading" secondItem="iWq-kT-pt4" secondAttribute="leading" id="5rK-ma-pz2"/>
+                    <constraint firstItem="iWq-kT-pt4" firstAttribute="top" secondItem="t3z-mH-pXj" secondAttribute="bottom" constant="16" id="8vj-0d-PRf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ToL-ME-X4I" secondAttribute="trailing" constant="32" id="B9v-Wb-s8b"/>
+                    <constraint firstItem="iWq-kT-pt4" firstAttribute="leading" secondItem="t3z-mH-pXj" secondAttribute="leading" id="Ges-xH-DUe"/>
+                    <constraint firstItem="t3z-mH-pXj" firstAttribute="top" secondItem="ZeZ-zs-d4Q" secondAttribute="bottom" id="LLs-hx-X7S"/>
+                    <constraint firstItem="ac4-2y-Pfb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MgO-1z-oXq"/>
+                    <constraint firstItem="Jpx-Uz-bLA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="QeA-7O-nvt"/>
+                    <constraint firstItem="ZeZ-zs-d4Q" firstAttribute="top" secondItem="Jpx-Uz-bLA" secondAttribute="top" id="chZ-bh-acO"/>
+                    <constraint firstItem="ZeZ-zs-d4Q" firstAttribute="leading" secondItem="Jpx-Uz-bLA" secondAttribute="trailing" constant="8" id="dwk-0N-9zf"/>
+                    <constraint firstItem="Jpx-Uz-bLA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="epP-cQ-6yF"/>
+                    <constraint firstAttribute="bottom" secondItem="ac4-2y-Pfb" secondAttribute="bottom" id="hC5-zQ-BKN"/>
+                    <constraint firstItem="ToL-ME-X4I" firstAttribute="top" secondItem="iWq-kT-pt4" secondAttribute="bottom" constant="8" id="ijN-F2-Rfm"/>
+                    <constraint firstAttribute="trailing" secondItem="ac4-2y-Pfb" secondAttribute="trailing" id="rhW-cp-jTf"/>
+                    <constraint firstItem="ac4-2y-Pfb" firstAttribute="top" secondItem="ToL-ME-X4I" secondAttribute="bottom" constant="32" id="uue-8G-QeS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="114" y="204.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="altonAvatar" width="32" height="32"/>
+        <image name="groupAvatar" width="20" height="13"/>
+    </resources>
+</document>

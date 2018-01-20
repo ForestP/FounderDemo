@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="412" id="KGk-i7-Jjw" customClass="pollMsgCell" customModule="FounderDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="499" height="412"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="499" height="411.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pollUser" translatesAutoresizingMaskIntoConstraints="NO" id="fJf-mo-BFp">
+                        <rect key="frame" x="24" y="323.5" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Fa0-F7-hgo"/>
+                            <constraint firstAttribute="width" constant="24" id="nij-R9-UFK"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O3C-PF-fsF" customClass="pollBorderView" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="56" y="12" width="256" height="331"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Next Meetup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLn-0u-sSW" customClass="mainLabel" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="16" width="88" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="tlC-fF-hWO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="15 votes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQF-VC-Mhg" customClass="subtleLabel" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="34" width="47.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="thk-zC-Lr4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QUN-ke-RID" customClass="seperatorView" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="68" width="256" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="HtT-kd-dsf"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDy-SG-0Qy" customClass="mainLabel" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="86" width="56.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="fiR-RR-kG6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3v-K2-EF4">
+                                <rect key="frame" x="218" y="85" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="2Ur-Bv-aVd"/>
+                                    <constraint firstAttribute="height" constant="22" id="pcS-Qz-c3r"/>
+                                </constraints>
+                                <state key="normal" image="deselectedPoll"/>
+                                <state key="selected" image="selectedPoll"/>
+                                <connections>
+                                    <action selector="pressed1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JLT-46-xDp"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GTg-Z1-sTL" customClass="seperatorView" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="122" width="256" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="t8o-0b-P2h"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mje-af-Fwf" customClass="mainLabel" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="140" width="59" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="KKz-Wv-fAD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ze5-Eu-e9i">
+                                <rect key="frame" x="218" y="139" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="j4i-lG-v8f"/>
+                                    <constraint firstAttribute="width" constant="22" id="rVd-K7-SNp"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="deselectedPoll"/>
+                                <state key="selected" image="selectedPoll"/>
+                                <connections>
+                                    <action selector="pressed2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TKA-3K-5SL"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOQ-7b-ewf" customClass="seperatorView" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="176" width="256" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ZaV-Kq-syx"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDp-wu-40p" customClass="mainLabel" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="194" width="83" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="yWi-Y0-C7N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIs-Bb-KE4">
+                                <rect key="frame" x="218" y="193" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="5ef-WL-MZL"/>
+                                    <constraint firstAttribute="height" constant="22" id="JKy-aL-tB1"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="deselectedPoll"/>
+                                <state key="selected" image="selectedPoll"/>
+                                <connections>
+                                    <action selector="pressed3:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bMS-44-9sN"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V5X-iE-fDP" customClass="seperatorView" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="230" width="256" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Mt7-kQ-gBh"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Thrusday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mij-be-i6n" customClass="mainLabel" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="248" width="66.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="lr0-Bl-eIu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9w-NV-Q7f">
+                                <rect key="frame" x="218" y="247" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Ddm-6g-bTk"/>
+                                    <constraint firstAttribute="width" constant="22" id="bzk-Lt-eca"/>
+                                </constraints>
+                                <state key="normal" image="deselectedPoll"/>
+                                <state key="selected" image="selectedPoll"/>
+                                <connections>
+                                    <action selector="pressed4:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bhO-BV-FoW"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iyc-Y9-1B1" customClass="seperatorView" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="284" width="256" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="mBE-MH-H7O"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39p-Fu-e8J" customClass="mainLabel" customModule="FounderDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="302" width="43.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="jOT-gC-q3X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aH-9J-FgN">
+                                <rect key="frame" x="218" y="301" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="UzC-l5-nVQ"/>
+                                    <constraint firstAttribute="width" constant="22" id="q5K-4R-QH5"/>
+                                </constraints>
+                                <state key="normal" image="deselectedPoll"/>
+                                <state key="selected" image="selectedPoll"/>
+                                <connections>
+                                    <action selector="pressed5:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="941-Ut-98R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="39p-Fu-e8J" firstAttribute="centerY" secondItem="0aH-9J-FgN" secondAttribute="centerY" id="0rl-up-Ett"/>
+                            <constraint firstItem="mij-be-i6n" firstAttribute="centerY" secondItem="m9w-NV-Q7f" secondAttribute="centerY" id="3GG-8y-NHy"/>
+                            <constraint firstItem="iyc-Y9-1B1" firstAttribute="leading" secondItem="O3C-PF-fsF" secondAttribute="leading" id="7HE-KY-Wq5"/>
+                            <constraint firstAttribute="trailing" secondItem="XOQ-7b-ewf" secondAttribute="trailing" id="7r9-ul-0qG"/>
+                            <constraint firstItem="iyc-Y9-1B1" firstAttribute="bottom" secondItem="m9w-NV-Q7f" secondAttribute="bottom" constant="16" id="8zo-0v-2h5"/>
+                            <constraint firstAttribute="trailing" secondItem="V5X-iE-fDP" secondAttribute="trailing" id="9Uf-qN-GVI"/>
+                            <constraint firstItem="XOQ-7b-ewf" firstAttribute="bottom" secondItem="Ze5-Eu-e9i" secondAttribute="bottom" constant="16" id="CFd-be-Ohe"/>
+                            <constraint firstItem="m9w-NV-Q7f" firstAttribute="top" secondItem="V5X-iE-fDP" secondAttribute="bottom" constant="16" id="CTj-34-CRb"/>
+                            <constraint firstItem="Ze5-Eu-e9i" firstAttribute="top" secondItem="GTg-Z1-sTL" secondAttribute="bottom" constant="16" id="CrB-3V-CTU"/>
+                            <constraint firstItem="mje-af-Fwf" firstAttribute="centerY" secondItem="Ze5-Eu-e9i" secondAttribute="centerY" id="E0o-ZX-kX9"/>
+                            <constraint firstAttribute="trailing" secondItem="QUN-ke-RID" secondAttribute="trailing" id="Gt4-Rc-jbf"/>
+                            <constraint firstItem="oLn-0u-sSW" firstAttribute="leading" secondItem="O3C-PF-fsF" secondAttribute="leading" constant="16" id="MnP-cG-JrF"/>
+                            <constraint firstItem="V5X-iE-fDP" firstAttribute="bottom" secondItem="rIs-Bb-KE4" secondAttribute="bottom" constant="16" id="N8x-9K-GSA"/>
+                            <constraint firstAttribute="bottom" secondItem="0aH-9J-FgN" secondAttribute="bottom" constant="16" id="NSe-NX-iYc"/>
+                            <constraint firstItem="rIs-Bb-KE4" firstAttribute="top" secondItem="XOQ-7b-ewf" secondAttribute="bottom" constant="16" id="OOv-5H-og3"/>
+                            <constraint firstItem="QUN-ke-RID" firstAttribute="leading" secondItem="O3C-PF-fsF" secondAttribute="leading" id="SOb-cl-52V"/>
+                            <constraint firstAttribute="width" constant="256" id="SlZ-xS-gnt"/>
+                            <constraint firstAttribute="trailing" secondItem="m9w-NV-Q7f" secondAttribute="trailing" constant="16" id="URR-WH-idj"/>
+                            <constraint firstItem="mje-af-Fwf" firstAttribute="leading" secondItem="O3C-PF-fsF" secondAttribute="leading" constant="16" id="VP1-ZY-TZa"/>
+                            <constraint firstItem="mij-be-i6n" firstAttribute="leading" secondItem="O3C-PF-fsF" secondAttribute="leading" constant="16" id="Y3y-Fb-HI7"/>
+                            <constraint firstItem="0aH-9J-FgN" firstAttribute="top" secondItem="iyc-Y9-1B1" secondAttribute="bottom" constant="16" id="Z8h-PG-Qc6"/>
+                            <constraint firstItem="TDp-wu-40p" firstAttribute="leading" secondItem="O3C-PF-fsF" secondAttribute="leading" constant="16" id="ZfM-jx-go8"/>
+                            <constraint firstItem="GTg-Z1-sTL" firstAttribute="bottom" secondItem="G3v-K2-EF4" secondAttribute="bottom" constant="16" id="b7K-kG-fvC"/>
+                            <constraint firstItem="iQF-VC-Mhg" firstAttribute="top" secondItem="oLn-0u-sSW" secondAttribute="bottom" id="cBY-Pu-zzw"/>
+                            <constraint firstItem="oLn-0u-sSW" firstAttribute="top" secondItem="O3C-PF-fsF" secondAttribute="top" constant="16" id="cvU-mS-d4C"/>
+                            <constraint firstItem="39p-Fu-e8J" firstAttribute="leading" secondItem="O3C-PF-fsF" secondAttribute="leading" constant="16" id="eX4-mv-tui"/>
+                            <constraint firstItem="uDy-SG-0Qy" firstAttribute="top" secondItem="QUN-ke-RID" secondAttribute="bottom" constant="17" id="et3-98-Qmk"/>
+                            <constraint firstAttribute="bottom" secondItem="G3v-K2-EF4" secondAttribute="bottom" constant="229" id="koe-2Q-H6a"/>
+                            <constraint firstAttribute="trailing" secondItem="0aH-9J-FgN" secondAttribute="trailing" constant="16" id="kqr-H9-6rV"/>
+                            <constraint firstItem="iQF-VC-Mhg" firstAttribute="leading" secondItem="oLn-0u-sSW" secondAttribute="leading" id="lKW-Qq-FnS"/>
+                            <constraint firstItem="V5X-iE-fDP" firstAttribute="leading" secondItem="O3C-PF-fsF" secondAttribute="leading" id="laI-uM-fBo"/>
+                            <constraint firstAttribute="trailing" secondItem="G3v-K2-EF4" secondAttribute="trailing" constant="16" id="lf7-Ud-sBb"/>
+                            <constraint firstItem="TDp-wu-40p" firstAttribute="centerY" secondItem="rIs-Bb-KE4" secondAttribute="centerY" id="mB3-Ay-caz"/>
+                            <constraint firstAttribute="trailing" secondItem="Ze5-Eu-e9i" secondAttribute="trailing" constant="16" id="nK2-vo-WP1"/>
+                            <constraint firstAttribute="trailing" secondItem="GTg-Z1-sTL" secondAttribute="trailing" id="rLz-zJ-gZ5"/>
+                            <constraint firstAttribute="trailing" secondItem="rIs-Bb-KE4" secondAttribute="trailing" constant="16" id="ryB-ER-0V0"/>
+                            <constraint firstAttribute="trailing" secondItem="iyc-Y9-1B1" secondAttribute="trailing" id="stv-QL-5dJ"/>
+                            <constraint firstItem="uDy-SG-0Qy" firstAttribute="leading" secondItem="O3C-PF-fsF" secondAttribute="leading" constant="16" id="t5o-OM-iPg"/>
+                            <constraint firstItem="QUN-ke-RID" firstAttribute="top" secondItem="iQF-VC-Mhg" secondAttribute="bottom" constant="16" id="ulQ-HN-PJE"/>
+                            <constraint firstItem="G3v-K2-EF4" firstAttribute="top" secondItem="QUN-ke-RID" secondAttribute="bottom" constant="16" id="vCP-v6-b7c"/>
+                            <constraint firstItem="GTg-Z1-sTL" firstAttribute="leading" secondItem="O3C-PF-fsF" secondAttribute="leading" id="whG-rq-tRq"/>
+                            <constraint firstItem="XOQ-7b-ewf" firstAttribute="leading" secondItem="O3C-PF-fsF" secondAttribute="leading" id="xpk-mG-fbJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O3C-PF-fsF" firstAttribute="leading" secondItem="fJf-mo-BFp" secondAttribute="trailing" constant="8" id="HTZ-t4-daH"/>
+                    <constraint firstItem="O3C-PF-fsF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Nha-s0-MPX"/>
+                    <constraint firstItem="fJf-mo-BFp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="aD7-5Q-Apo"/>
+                    <constraint firstAttribute="bottom" secondItem="fJf-mo-BFp" secondAttribute="bottom" constant="12" id="h13-Ub-qjL"/>
+                    <constraint firstItem="O3C-PF-fsF" firstAttribute="bottom" secondItem="fJf-mo-BFp" secondAttribute="bottom" id="znN-xG-uUI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btn1" destination="G3v-K2-EF4" id="MIO-Dy-9W6"/>
+                <outlet property="btn2" destination="Ze5-Eu-e9i" id="cEc-Df-g85"/>
+                <outlet property="btn3" destination="rIs-Bb-KE4" id="mWb-6s-baG"/>
+                <outlet property="btn4" destination="m9w-NV-Q7f" id="e1d-CD-RgV"/>
+                <outlet property="btn5" destination="0aH-9J-FgN" id="AY6-yT-8RG"/>
+            </connections>
+            <point key="canvasLocation" x="-168" y="18"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="deselectedPoll" width="22" height="22"/>
+        <image name="pollUser" width="26" height="26"/>
+        <image name="selectedPoll" width="22" height="22"/>
+    </resources>
+</document>

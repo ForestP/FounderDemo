@@ -8,7 +8,7 @@
 
 import UIKit
 
-class cell1: UITableViewCell {
+class cell1: UITableViewCell, NibLoadableView {
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="228" id="KGk-i7-Jjw" customClass="cell3" customModule="FounderDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="544" height="228"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="544" height="227.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="EHN-d8-9pO" customClass="roundedImage" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="36" y="43" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="614-f4-8wW"/>
+                            <constraint firstAttribute="width" constant="32" id="RST-d7-mNh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abagael Ziebert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmT-b2-Ot7" customClass="mainLabel" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="76" y="43" width="111" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="PbL-XU-tXh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Software Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXJ-bD-iLn" customClass="subtleLabel" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="76" y="61" width="112" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="hKT-O7-vgy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu9-DI-b4r" customClass="mainLabel" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="76" y="95" width="436" height="49.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Is anyone interested in mobile app development by chance? iOS preferably.">
+                                <attributes>
+                                    <font key="NSFont" size="17" name="SFProText-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="24" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upM-mA-GAq">
+                        <rect key="frame" x="76" y="160.5" width="149" height="34"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="CZ2-3N-0al"/>
+                            <constraint firstAttribute="width" constant="149" id="Pap-17-jdV"/>
+                        </constraints>
+                        <state key="normal" title="I'm Interested">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View 13 comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kH7-Ya-sqU" customClass="selectableLabel" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="385.5" y="176.5" width="106.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="g85-Yq-5uX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRN-eS-Htm" customClass="seperatorView" customModule="FounderDemo" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="226.5" width="544" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="6dB-35-zaZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EHN-d8-9pO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="1Vm-eK-vBm"/>
+                    <constraint firstItem="BmT-b2-Ot7" firstAttribute="top" secondItem="EHN-d8-9pO" secondAttribute="top" id="1uw-6S-FBU"/>
+                    <constraint firstItem="gu9-DI-b4r" firstAttribute="leading" secondItem="HXJ-bD-iLn" secondAttribute="leading" id="9yf-II-D3x"/>
+                    <constraint firstItem="upM-mA-GAq" firstAttribute="top" secondItem="gu9-DI-b4r" secondAttribute="bottom" constant="16" id="OAg-hc-uxu"/>
+                    <constraint firstItem="upM-mA-GAq" firstAttribute="leading" secondItem="gu9-DI-b4r" secondAttribute="leading" id="Pfh-be-to3"/>
+                    <constraint firstAttribute="bottom" secondItem="FRN-eS-Htm" secondAttribute="bottom" id="Phe-ea-0px"/>
+                    <constraint firstItem="gu9-DI-b4r" firstAttribute="top" secondItem="HXJ-bD-iLn" secondAttribute="bottom" constant="16" id="Ps1-Ue-O02"/>
+                    <constraint firstItem="BmT-b2-Ot7" firstAttribute="leading" secondItem="EHN-d8-9pO" secondAttribute="trailing" constant="8" id="Si3-cy-7wx"/>
+                    <constraint firstAttribute="trailing" secondItem="gu9-DI-b4r" secondAttribute="trailing" constant="32" id="ZZw-MU-BT7"/>
+                    <constraint firstItem="EHN-d8-9pO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="32" id="ax2-P2-nQl"/>
+                    <constraint firstAttribute="trailing" secondItem="FRN-eS-Htm" secondAttribute="trailing" id="bNc-pz-oeI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kH7-Ya-sqU" secondAttribute="trailing" constant="32" id="hsR-2e-ixb"/>
+                    <constraint firstItem="HXJ-bD-iLn" firstAttribute="top" secondItem="BmT-b2-Ot7" secondAttribute="bottom" id="jBH-hb-OZI"/>
+                    <constraint firstItem="FRN-eS-Htm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nQt-8m-qrg"/>
+                    <constraint firstItem="FRN-eS-Htm" firstAttribute="top" secondItem="upM-mA-GAq" secondAttribute="bottom" constant="32" id="r90-Br-dvd"/>
+                    <constraint firstItem="kH7-Ya-sqU" firstAttribute="bottom" secondItem="upM-mA-GAq" secondAttribute="bottom" id="whB-Xp-f6Y"/>
+                    <constraint firstItem="HXJ-bD-iLn" firstAttribute="leading" secondItem="EHN-d8-9pO" secondAttribute="trailing" constant="8" id="zj2-Yv-AMT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="137" y="144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user1" width="32" height="32"/>
+    </resources>
+</document>
